@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Circle Center Calculator | Калькулятор центра круга
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description | Описание
 
-Currently, two official plugins are available:
+**EN:**  
+A simple and efficient web application for calculating the center point of a circle based on three points. The app features a clean, responsive design and works offline as a Progressive Web Application (PWA). Input coordinates can use either dots or commas as decimal separators.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**RU:**  
+Простое и эффективное веб-приложение для расчёта центральной точки круга на основе трёх точек. Приложение имеет чистый, адаптивный дизайн и работает офлайн как Progressive Web Application (PWA). Координаты можно вводить, используя как точку, так и запятую в качестве разделителя.
 
-## Expanding the ESLint configuration
+## Features | Возможности
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**EN:**
+- Input coordinates for three points
+- Support for both dot and comma as decimal separators
+- Real-time calculation
+- Responsive design for all devices
+- Works offline (PWA)
+- Clean and intuitive interface
 
-- Configure the top-level `parserOptions` property like this:
+**RU:**
+- Ввод координат для трёх точек
+- Поддержка точки и запятой в качестве разделителя
+- Расчёт в реальном времени
+- Адаптивный дизайн для всех устройств
+- Работает офлайн (PWA)
+- Чистый и интуитивный интерфейс
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tech Stack | Технологии
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- PWA (Progressive Web Application)
+
+## Installation | Установка
+
+```bash
+# Clone repository | Клонировать репозиторий
+git clone https://github.com/yourusername/circle-center-calculator.git
+
+# Install dependencies | Установить зависимости
+npm install
+
+# Run development server | Запустить сервер разработки
+npm run dev
+
+# Build for production | Собрать для продакшена
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage | Использование
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+**EN:**  
+1. Enter X and Y coordinates for three points using either dots or commas as decimal separators
+2. The center point coordinates will be calculated automatically
+3. The application works offline after the first load
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**RU:**  
+1. Введите координаты X и Y для трёх точек, используя точку или запятую в качестве разделителя
+2. Координаты центральной точки будут рассчитаны автоматически
+3. Приложение работает офлайн после первой загрузки
