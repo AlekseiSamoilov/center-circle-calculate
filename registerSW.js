@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/center-circle-calculate/sw.js', { scope: '/center-circle-calculate/' })})}
